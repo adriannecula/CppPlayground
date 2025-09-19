@@ -27,10 +27,9 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && apt-get update && apt-get install -y sudo \
     && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
-
-    # Switch to non-root user by default
-USER $USERNAME
     
+# Switch to non-root user by default
+USER $USERNAME   
+
 # Set working directory
 WORKDIR /workspace
-
