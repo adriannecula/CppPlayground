@@ -12,7 +12,10 @@
         
             "extensions": [
                 "ms-vscode.cpptools",
-                "ms-vscode.cmake-tools"
+                "ms-vscode.cmake-tools",
+                "twxs.cmake",
+                "brobeson.ctest-lab",
+                "xaver.clang-format"
             ]
         }
     },
