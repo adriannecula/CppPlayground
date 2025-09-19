@@ -16,5 +16,10 @@
             ]
         }
     },
-    "postCreateCommand": "sudo chown -R $(whoami):$(whoami) /workspaces"
+    "mounts": [
+        "source=${localEnv:HOME}/.gitconfig,target=/home/developer/.gitconfig,type=bind"
+    ],
+    
+
+    "remoteUser": "ubuntu"
 }
